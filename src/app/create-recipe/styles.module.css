@@ -1,0 +1,196 @@
+.panel {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+/* Estilos de botones primarios */
+.btnPrimary { /* Cambiado a camelCase para CSS Modules */
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #0056b3;
+}
+
+.btnPrimarySmall { /* Cambiado a camelCase */
+  background-color: #0070f3;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  margin-top: 15px; /* Espacio superior */
+  transition: background-color 0.2s ease;
+}
+
+.btnPrimarySmall:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos de campos de texto */
+.inputText { /* Cambiado a camelCase */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.inputText:focus {
+  border-color: #0070f3;
+}
+
+.textareaText { /* Cambiado a camelCase */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical; /* Permite redimensionar verticalmente */
+  min-height: 80px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.textareaText:focus {
+  border-color: #0070f3;
+}
+
+/* MAIN LAYOUT STYLES */
+.mainContent { /* Cambiado a camelCase */
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.gridLayout { /* Cambiado a camelCase */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .gridLayout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .gridItemLeft { grid-column: 1 / 2; grid-row: 1 / 2; }
+  .gridItemRight { grid-column: 2 / 3; grid-row: 1 / 2; }
+  .gridItemIngredients { grid-column: 1 / 2; grid-row: 2 / 3; }
+  .gridItemInstructions { grid-column: 2 / 3; grid-row: 2 / 3; }
+}
+
+.submitButtonContainer { /* Cambiado a camelCase */
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.submitButton { /* Cambiado a camelCase */
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+
+/* SECCIÓN DE SUBIR IMÁGENES STYLES */
+.imageUploadPlaceholder { /* Cambiado a camelCase */
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SECCIÓN DE DETALLES DE LA RECETA STYLES */
+.formGroup { /* Mantenido, pero puedes cambiarlo si quieres más consistencia */
+  margin-bottom: 20px;
+}
+
+.formGroup .label { /* Mantenido */
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.timeAndPortionGroup, /* Mantenido */
+.difficultyAndPortionGroup { /* Mantenido */
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.timeItem, /* Mantenido */
+.difficultyItem, /* Mantenido */
+.portionItem { /* Mantenido */
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon { /* Mantenido */
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/* SECCIÓN DE INGREDIENTES STYLES */
+.sectionTitle { /* Mantenido */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.inputGroup { /* Mantenido */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox { /* Mantenido */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  min-width: 20px;
+}
+
+/* SECCIÓN DE INSTRUCCIONES STYLES */
+.instructionItem { /* Mantenido */
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.stepNumber { /* Mantenido */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #666;
+  min-width: 25px;
+  text-align: right;
+  padding-top: 10px;
+}
